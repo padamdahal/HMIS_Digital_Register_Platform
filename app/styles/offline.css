@@ -1,0 +1,1176 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 11, vendor/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 29, vendor/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 40, vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 49, vendor/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 63, vendor/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 77, vendor/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 85, vendor/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 99, vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 107, vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 115, vendor/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 124, vendor/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 132, vendor/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 142, vendor/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 154, vendor/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 164, vendor/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 172, vendor/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 180, vendor/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 188, vendor/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 192, vendor/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 204, vendor/_normalize.scss */
+img {
+  border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 212, vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 224, vendor/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 236, vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 247, vendor/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 258, vendor/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 272, vendor/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 285, vendor/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 297, vendor/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 307, vendor/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 319, vendor/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 331, vendor/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 340, vendor/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 351, vendor/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 364, vendor/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*doc
+---
+title: Colors
+name: Colors
+category: Variables - colors
+---
+Color patterns used in the whole Bahmni application are listed below... For using any particular color , you should call the variable used for the color.
+
+```html_example
+    <div class="row">
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background:#00463f;"><br><br><br><br><br></div>
+      <pre class="text-center">$bahmniPrimaryColor</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background:#669999;"><br><br><br><br><br></div>
+      <pre class="text-center">$bahmniSecondaryColor</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background: #457FAC;"><br><br><br><br><br></div>
+      <pre class="text-center">$bahmniTertiaryColor</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background:#2b95ff;"><br><br><br><br><br></div>
+      <pre class="text-center">$bahmniLinkColor</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background:#a1d030;"><br><br><br><br><br></div>
+      <pre class="text-center">$bahmniPrimaryBtnColor</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background:#88af28;"><br><br><br><br><br></div>
+      <pre class="text-center">$bahmniPrimaryBtnColorHover</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background:#66b298;"><br><br><br><br><br></div>
+      <pre class="text-center">$bahmniSectionHeaderColor</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background: #EFF8FF;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalNotesColor</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background:#E8A000;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalCurrentVist</pre>
+    </div>
+
+     <div class="col-sm-3 col-xs-6">
+      <div style="background:#e8edf3;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalInfoMessageBg</pre>
+    </div>
+
+     <div class="col-sm-3 col-xs-6">
+      <div style="background: #660000;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalRemoveBtn</pre>
+    </div>
+
+     <div class="col-sm-3 col-xs-6">
+      <div style="background:#cceffc;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalHighlight</pre>
+    </div>
+
+     <div class="col-sm-3 col-xs-6">
+      <div style="background: #ffcdcd;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalFormInvalid</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background: #007fff;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalFormFocus</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background: #fffdf7;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalFormFocusBg</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background: #FFFAD8;"><br><br><br><br><br></div>
+      <pre class="text-center">$clinicalFormWarning</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background:#333;"><br><br><br><br><br></div>
+      <pre class="text-center">$darkGray</pre>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <div style="background: #666;"><br><br><br><br><br></div>
+      <pre class="text-center">$mediumGray</pre>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <div style="background:#ccc;"><br><br><br><br><br></div>
+        <pre class="text-center">$lightGray</pre>
+    </div>
+
+     <div class="col-sm-3 col-xs-6">
+        <div style="background: #ddd;"><br><br><br><br><br></div>
+        <pre class="text-center">$lighterGray</pre>
+     </div>
+
+      <div class="col-sm-3 col-xs-6">
+          <div style="background: #eee;"><br><br><br><br><br></div>
+          <pre class="text-center">$lightestGray</pre>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+            <div style="background: #bbb;"><br><br><br><br><br></div>
+            <pre class="text-center">$primarySectionGridBorder</pre>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <div style="background: #f1f1f1;"><br><br><br><br><br></div>
+        <pre class="text-center">$bahmniTableHeaderBg</pre>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <div style="background: #fafafa;"><br><br><br><br><br></div>
+        <pre class="text-center">$bahmniPageBg</pre>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <div style="background: #FFFDF0;"><br><br><br><br><br></div>
+        <pre class="text-center">$alertBackground</pre>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <div style="background: #FFFFFF;"><br><br><br><br><br></div>
+        <pre class="text-center">$white</pre>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <div style="background: #000000;"><br><br><br><br><br></div>
+        <pre class="text-center">$black</pre>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <div style="background: #BBB;"><br><br><br><br><br></div>
+        <pre class="text-center">$darkerGrey</pre>
+      </div>
+
+      <div class="col-sm-3 col-xs-6">
+        <div style="background: #f3f3f3;"><br><br><br><br><br></div>
+        <pre class="text-center">$lighterGrey</pre>
+      </div>
+
+  </div>
+```
+
+*/
+/*doc
+---
+title: Fonts
+name: Fonts
+category: Variables - fonts
+---
+Below listed fonts are used in the whole Bahmni application.
+
+```html_example
+  <div>
+   <span style="font-family: OpenSansBold;">font-family: $OpenSansBoldFont;</span><br/>
+   <span>font-family: $OpenSansFont;</span><br/>
+   <span style="font-family: OpenSansLight;">font-family: $primaryLightFont;</span><br/>
+   <span style="font-family: OpenSansItalic;"> font-family: $primaryItalicFont;</span><br/>
+  </div>
+```
+
+*/
+/* settings */
+/*  _colors - bahmniTheme:  */
+/*  _components - bahmniTheme: */
+/*  _different shades of grey/gray:  */
+/* any text will not be lighter than this */
+/* any border will not be lighter than this */
+/* any background will not be lighter than this */
+/*  _spacing padding - margin:  */
+/* _fonts */
+/* _mixins */
+/*doc
+---
+title: Basic Headings
+name: Basic_headings
+category: Components - Headings
+---
+```html_example
+<h1>Sample Header1</h1>
+<h2>Sample Header2</h2>
+<h3>Sample Header3</h3>
+<h4>Sample Header4</h4>
+<h5>Sample Header5</h5>
+<h6>Sample Header6</h6>
+```
+
+*/
+/* line 19, bahmni-helper/_base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 24, bahmni-helper/_base.scss */
+html.ngdialog-open {
+  overflow: hidden !important;
+}
+
+/* line 29, bahmni-helper/_base.scss */
+body {
+  font-family: OpenSans, Arial, sans-serif, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  background: #fafafa;
+  color: #363463;
+  font-size: 16px;
+  line-height: 1.1em;
+  margin: 0 auto;
+}
+/* line 37, bahmni-helper/_base.scss */
+body pre {
+  background: none;
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, sans-serif, Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* line 45, bahmni-helper/_base.scss */
+body.show-controller-back.ngdialog-open {
+  overflow: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* line 50, bahmni-helper/_base.scss */
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 55, bahmni-helper/_base.scss */
+ol {
+  display: inline-block;
+}
+
+/* line 59, bahmni-helper/_base.scss */
+ul {
+  list-style: none;
+}
+
+/* line 63, bahmni-helper/_base.scss */
+ul.list {
+  margin-bottom: 10px;
+}
+/* line 65, bahmni-helper/_base.scss */
+ul.list li {
+  list-style: circle;
+  margin: 0 0 5px 30px;
+}
+/* line 68, bahmni-helper/_base.scss */
+ul.list li ul li {
+  color: #666;
+}
+
+/* line 74, bahmni-helper/_base.scss */
+hr {
+  border: 0;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+/* line 81, bahmni-helper/_base.scss */
+a, a:link, a:visited, a:hover, a:active {
+  color: #2b95ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 88, bahmni-helper/_base.scss */
+#body-wrapper {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* line 95, bahmni-helper/_base.scss */
+table {
+  margin: 0 auto;
+}
+
+/* line 100, bahmni-helper/_base.scss */
+i.link {
+  font-size: 0.7em;
+}
+/* line 104, bahmni-helper/_base.scss */
+i.small {
+  font-size: 1.2em;
+}
+/* line 108, bahmni-helper/_base.scss */
+i.medium {
+  font-size: 2em;
+}
+
+/* line 115, bahmni-helper/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #00473f;
+  clear: both;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+/* line 122, bahmni-helper/_base.scss */
+h1 {
+  font-size: 1.5em;
+  margin: 10px 0 20px 0;
+}
+
+/* line 127, bahmni-helper/_base.scss */
+h2 {
+  font-size: 1.3em;
+  color: #009384;
+}
+/* line 131, bahmni-helper/_base.scss */
+h2 em {
+  font-size: 0.7em;
+  color: #00e0c9;
+  display: block;
+}
+
+/* line 138, bahmni-helper/_base.scss */
+h3 {
+  font-size: 1.2em;
+}
+
+/* line 143, bahmni-helper/_base.scss */
+h4 {
+  font-size: 1.2em;
+  color: #009384;
+}
+
+/* line 148, bahmni-helper/_base.scss */
+h5 {
+  font-size: 1.17em;
+}
+
+/* line 152, bahmni-helper/_base.scss */
+h6 {
+  font-size: 1.13em;
+  color: #009384;
+}
+
+/* line 157, bahmni-helper/_base.scss */
+p {
+  margin: 0;
+}
+/* line 160, bahmni-helper/_base.scss */
+p.spaced {
+  margin-bottom: 15px;
+}
+
+/* line 165, bahmni-helper/_base.scss */
+strong {
+  font-family: "OpenSansBold";
+  font-weight: normal;
+}
+
+/* line 170, bahmni-helper/_base.scss */
+em {
+  font-family: "OpenSansItalic";
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 177, bahmni-helper/_base.scss */
+table {
+  width: 100%;
+}
+/* line 180, bahmni-helper/_base.scss */
+table th, table td {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+/* line 185, bahmni-helper/_base.scss */
+table tr {
+  border: 1px solid #EEE;
+}
+/* line 189, bahmni-helper/_base.scss */
+table tr:nth-child(even) {
+  background: #FFFDF7;
+}
+/* line 193, bahmni-helper/_base.scss */
+table tr:nth-child(odd) {
+  background: white;
+}
+/* line 197, bahmni-helper/_base.scss */
+table tr.hover {
+  background: #75b2f0;
+  color: white;
+  cursor: pointer;
+}
+/* line 203, bahmni-helper/_base.scss */
+table tr.selected {
+  background: #007FFF;
+  color: white;
+}
+/* line 207, bahmni-helper/_base.scss */
+table tr.selected a {
+  color: white;
+}
+/* line 212, bahmni-helper/_base.scss */
+table thead th {
+  border-bottom: 1px solid #ddd;
+  background: #f3f3f3;
+  width: auto;
+  text-align: left;
+  word-break: normal;
+  font-weight: normal;
+  font-family: "OpenSansBold";
+}
+
+/* line 223, bahmni-helper/_base.scss */
+.title {
+  font-family: "OpenSansBold";
+}
+
+/* line 227, bahmni-helper/_base.scss */
+.body {
+  font-weight: 400;
+}
+
+/* line 231, bahmni-helper/_base.scss */
+.small {
+  font-family: "OpenSansLight";
+}
+
+/* line 236, bahmni-helper/_base.scss */
+.clear:before, .clear:after {
+  content: " ";
+  display: table;
+}
+/* line 242, bahmni-helper/_base.scss */
+.clear:after {
+  clear: both;
+}
+
+/* line 247, bahmni-helper/_base.scss */
+.fl, .left {
+  float: left;
+}
+
+/* line 248, bahmni-helper/_base.scss */
+.fr, .right {
+  float: right;
+}
+
+/* line 250, bahmni-helper/_base.scss */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* line 255, bahmni-helper/_base.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 259, bahmni-helper/_base.scss */
+.hidden {
+  display: none;
+}
+
+/* line 263, bahmni-helper/_base.scss */
+.highlighted {
+  background-color: #00473f;
+  color: #FFFFFF;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* line 270, bahmni-helper/_base.scss */
+.visible-true {
+  visibility: visible;
+}
+
+/* line 274, bahmni-helper/_base.scss */
+.visible-false {
+  visibility: hidden;
+}
+
+/* line 278, bahmni-helper/_base.scss */
+.fa-file-pdf-o {
+  background-color: red;
+  color: #fff;
+  font-size: 36px;
+  padding: 5px 0 4px;
+  margin-right: 12px;
+}
+
+/* line 286, bahmni-helper/_base.scss */
+.infoMsgRetrospectiveModeEnabled {
+  border: 1px #ccc solid;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  margin: 0 auto 10px;
+  width: 98%;
+  text-align: center;
+  background-color: #eee;
+  color: #FF1004;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+/* line 299, bahmni-helper/_base.scss */
+.infoMsgRetrospectiveModeEnabled span {
+  display: inline-block;
+  padding-left: 40px;
+}
+/* line 303, bahmni-helper/_base.scss */
+.infoMsgRetrospectiveModeEnabled i {
+  font-size: 28px;
+  position: absolute;
+  top: 0;
+}
+
+/* line 311, bahmni-helper/_base.scss */
+.visible-desktop {
+  visibility: visible;
+}
+@media (max-width: 768px) {
+  /* line 311, bahmni-helper/_base.scss */
+  .visible-desktop {
+    visibility: hidden;
+  }
+}
+
+/* line 318, bahmni-helper/_base.scss */
+.visible-small-screen {
+  display: none;
+}
+@media (max-width: 768px) {
+  /* line 318, bahmni-helper/_base.scss */
+  .visible-small-screen {
+    display: block;
+  }
+}
+
+/* line 326, bahmni-helper/_base.scss */
+.showOn-desktop {
+  display: block !important;
+}
+@media (max-width: 768px) {
+  /* line 326, bahmni-helper/_base.scss */
+  .showOn-desktop {
+    display: none !important;
+  }
+}
+
+/* line 333, bahmni-helper/_base.scss */
+.showOn-small-screen {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  /* line 333, bahmni-helper/_base.scss */
+  .showOn-small-screen {
+    display: block !important;
+  }
+}
+
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: url("../styles/fonts/opensans-semibold-webfont.eot");
+  src: url("../styles/fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../styles/fonts/opensans-semibold-webfont.ttf") format("truetype"), url("../styles/fonts/opensans-semibold-webfont.svg#open_sans_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url("../styles/fonts/opensans-bold-webfont.eot");
+  src: url("../styles/fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../styles/fonts/opensans-bold-webfont.ttf") format("truetype"), url("../styles/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url("../styles/fonts/opensans-italic-webfont.eot");
+  src: url("../styles/fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../styles/fonts/opensans-italic-webfont.woff") format("woff"), url("../styles/fonts/opensans-italic-webfont.ttf") format("truetype"), url("../styles/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url("../styles/fonts/opensans-light-webfont.eot");
+  src: url("../styles/fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../styles/fonts/opensans-light-webfont.ttf") format("truetype"), url("../styles/fonts/opensans-light-webfont.svg#open_sans_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../styles/fonts/opensans-regular-webfont.eot");
+  src: url("../styles/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../styles/fonts/opensans-regular-webfont.ttf") format("truetype"), url("../styles/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 10, offline/_offline.scss */
+.mask {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 18, offline/_offline.scss */
+.overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+/* line 28, offline/_offline.scss */
+.message {
+  margin-top: 20px;
+}
+
+/* line 32, offline/_offline.scss */
+.offline-initial-sync {
+  width: auto;
+  display: table;
+  margin: 200px auto 0;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 0.5px;
+}
+/* line 40, offline/_offline.scss */
+.offline-initial-sync span {
+  display: block;
+  line-height: 1;
+}
+/* line 43, offline/_offline.scss */
+.offline-initial-sync span.sync-text {
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+/*doc
+---
+title: Alerts
+name: alerts
+category: Components - Alerts
+---
+
+
+```html_example
+<div class="messages">
+<ul>
+	<li>
+		<div class="message-container success-message-container">
+			<div class="message-icon">
+				<i class="fa fa-check-circle"></i>
+			</div>
+			<div class="message-text">
+				<div>
+				   Save
+				</div>
+			</div>
+		</div>
+	</li>
+</ul>
+</div>
+```
+
+*/
+/*doc
+---
+title: Error Message
+name: error_message
+category: Components - Alerts
+---
+
+
+```html_example
+<div class="messages">
+ 	<ul>
+        <li>
+            <div class="message-container error-message-container">
+                <div class="message-text">
+                    <div class="types-for-errors error-message">
+                        <div>
+                            <div class="msg">Error Message</div>
+                        </div>
+                    </div>
+                    <div class="button-wrappper clearfix">
+                        <button type="button"  class="copy-btn fl">Copy Error</button>
+                        <button type="button"  class="show-btn fr">OK</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+```
+
+*/
+/* line 66, common/_notifications.scss */
+.messages .message-container {
+  width: 35%;
+  margin: 5px auto;
+  padding: 7px 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #FFF;
+  font-family: OpenSansSemiBold;
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  left: 32%;
+  z-index: 99999999;
+  display: table;
+  overflow: hidden;
+  *zoom: 1;
+}
+@media (max-width: 1024px) {
+  /* line 66, common/_notifications.scss */
+  .messages .message-container {
+    width: 50%;
+    left: 25%;
+  }
+}
+/* line 85, common/_notifications.scss */
+.messages .message-container .message-icon {
+  display: block;
+  font-size: 30px;
+  text-align: left;
+  width: 12%;
+}
+/* line 92, common/_notifications.scss */
+.messages .error-message-container {
+  background: #d87777;
+  background: -moz-linear-gradient(top, #d87777 1%, #d95757 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #d87777), color-stop(100%, #d95757));
+  background: -webkit-linear-gradient(top, #d87777 1%, #d95757 100%);
+  background: -o-linear-gradient(top, #d87777 1%, #d95757 100%);
+  background: -ms-linear-gradient(top, #d87777 1%, #d95757 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#d87777', endColorstr = '#d95757', GradientType = 0);
+  background: linear-gradient(to bottom, #d87777 1%, #d95757 100%);
+  border: 1px solid #b72224;
+}
+/* line 102, common/_notifications.scss */
+.messages .error-message-container .types-for-errors {
+  display: block;
+  text-align: center;
+  padding: 0 0 7px;
+}
+/* line 108, common/_notifications.scss */
+.messages .error-message-container .button-wrappper .copy-btn, .messages .error-message-container .button-wrappper .show-btn {
+  padding: 5px;
+  font-family: OpenSansSemiBold;
+  font-size: 12px;
+  width: 74px;
+}
+/* line 116, common/_notifications.scss */
+.messages .success-message-container {
+  background: #8ad382;
+  background: -moz-linear-gradient(top, #8ad382 0%, #6ab165 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8ad382), color-stop(100%, #6ab165));
+  background: -webkit-linear-gradient(top, #8ad382 0%, #6ab165 100%);
+  background: -o-linear-gradient(top, #8ad382 0%, #6ab165 100%);
+  background: -ms-linear-gradient(top, #8ad382 0%, #6ab165 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#8ad382', endColorstr = '#6ab165', GradientType = 0);
+  background: linear-gradient(to bottom, #8ad382 0%, #6ab165 100%);
+  border: 1px solid #4b8048;
+  padding: 0px 10px;
+}
+/* line 127, common/_notifications.scss */
+.messages .success-message-container .fa {
+  padding: 0 !important;
+  padding-bottom: 3px !important;
+}
+
+/* line 135, common/_notifications.scss */
+.success-message-container .message-icon {
+  display: table-cell !important;
+}
+/* line 138, common/_notifications.scss */
+.success-message-container .message-text {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+}
