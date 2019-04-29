@@ -1,0 +1,258 @@
+{
+    "observationReport": {
+        "name": "Test Observation Report",
+		"diy":"true",
+        "type": "observations",
+        "config": {
+            "patientAttributes": ["caste", "primaryContact"],
+            "patientAddresses": ["address3", "city_village"],
+            "visitAttributes": ["Visit Status"],
+            "showVisitInfo": true,
+            "showProvider": false,
+            "conceptNamesToFilter": ["ANC, Gravida","Para","ANC Checkup visit"],
+            "conceptNameDisplayFormat": "shortNamePreferred",
+            "conceptValuesToFilter": [],
+            "conceptClassesToFilter": [],
+            "locationTagsToFilter": [],
+            "programsToFilter": [],
+            "applyDateRangeFor": "obsDate",
+            "encounterPerRow": true,
+            "forDataAnalysis": true,
+            "visitTypesToFilter": []
+        }
+    },
+    
+	"formReport":{
+		"name": "MNH Form Report",
+		"diy":"true",
+		"type": "forms",
+		"config": {
+			"patientAttributes": ["caste","primaryContact"],
+			"patientAddresses": ["address3","city_village"],
+			"visitAttributes": ["Visit Status"],    
+			"showVisitInfo": true,
+			"showProvider": true,
+			"formNamesToFilter": ["Maternal and Neonatal Health"],
+			"conceptNameDisplayFormat": "shortNamePreferred",
+			"locationTagsToFilter": [],
+			"programsToFilter": [],
+			"applyDateRangeFor": "obsDate",
+			"visitTypesToFilter": []
+		}
+    },
+    	
+	"bloodPressure": {
+        "name": "Blood Pressure",
+        "type": "obsCount",
+        "config": {
+            "ageGroupName": "All Ages",
+            "conceptNames": ["Systolic","Diastolic"],
+            "countOnlyClosedVisits": "false",
+            "countOncePerPatient": "false",
+            "visitTypes": []
+        }
+    },
+    
+	"vitalsReport": {
+        "name": "Vitals Report",
+		"diy":"true",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "Vitals",
+            "patientAttributes": ["caste"],
+            "applyDateRangeFor": "encounterCreateDate"
+        }
+    },
+    
+	"obsValuesCounts": {
+        "name": "Obs Values Count Report",
+        "type": "ObsValueCount",
+        "config": {
+			"conceptNames": ["ANC, Gravida", "Diastolic", "Systolic"]
+		}
+    },
+	
+	"patientsListTestsResults": {
+        "name": "Patients list with tests results",
+        "type": "PatientsWithLabtestResults",
+        "config": {
+            "conceptNames": ["HIV ELISA (Blood)","Albumin","MCH"],
+            "testOutcome": ["abnormal","normal"]
+        }
+    },
+    
+	"obsCannedReport": {
+        "name": "Obs Canned Report",
+        "type": "obsCannedReport",
+        "config": {
+            "patientAttributes": ["caste","education"],
+            "applyDateRangeFor": "ObsRecording",
+            "addressAttributes": ["city_village"],
+            "conceptNames": ["Pulse", "WEIGHT","Vitals, Systolic","Temperature"],
+            "visitIndependentConcept": ["HEIGHT","Temperature"],
+            "enrolledProgram": "HIV Program",
+            "showObsOnlyForProgramDuration": false
+        }
+    },
+    
+    "pivotReport": {
+        "name": "Blood Pressure",
+        "type": "aggregation",
+        "config": {
+            "report":{
+                "type": "observations",
+                "config": {
+                    "conceptNamesToFilter":["Diastolic Data", "Systolic Data"],
+                    "showVisitInfo" : true,
+                    "forDataAnalysis": true,
+                    "visitAttributes": ["Visit Status", "Admission Status"],
+                    "visitTypesToFilter": ["IPD"]
+
+                }
+            },
+            "rowGroups": ["Gender"],
+            "columnGroups": ["Concept Name", "value"],
+            "distinctGroups": ["Patient Identifier"]
+        }
+    },
+    
+	"pivotReportOfVisits": {
+        "name": "Aggregation report for visits",
+        "type": "aggregation",
+        "config": {
+            "report":{
+                "type": "visits",
+                "config": {
+                    "forDataAnalysis": true,
+                    "patientAttributes": ["caste", "primaryContact"],
+                    "visitAttributes": ["Visit Status" ],
+                    "patientAddresses": ["address3","city_village"],
+                    "applyDateRangeFor": "visitStopDate",
+                    "visitTypesToFilter": []
+                }
+            },
+            "rowGroups": ["Gender"],
+            "columnGroups": ["Visit Status"],
+            "distinctGroups": ["Patient Identifier"]
+        }
+    },
+    
+	"pivotReportForPrograms": {
+        "name": "HIV Program Pivot Report",
+        "type": "aggregation",
+        "config": {
+            "report": {
+                "type": "programs",
+                "config": {
+                    "patientAttributes": [],
+                    "patientAddresses": ["city_village","address3"],
+                    "programAttributes": [],
+                    "forDataAnalysis": true,
+                    "showAllStates": true,
+                    "programNamesToFilter": ["TB Program", "HIV Program"]
+                }
+            },
+            "columnGroups": ["Program name"],
+            "rowGroups": ["Gender"],
+            "distinctGroups": ["Patient Identifier"],
+            "showTotalRow":true,
+            "showTotalColumn":true
+        }
+    },
+	
+	"AntenetalCheckupDetails": {
+        "name": "Antinetal Checkup Details",
+		"diy":"true",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "Antinetal Checkup Details"
+        }
+    },
+	"deliveryFormObsTemplate": {
+        "name": "Delivery Form ObsTemplate",
+		"diy":"true",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "Delivery Form"
+        }
+    },
+	"deliveryFormFormReport":{
+		"name": "Delivery Form FormReport",
+		"diy":"true",
+		"type": "forms",
+		"config": {
+			"patientAttributes": ["caste","primaryContact"],
+			"patientAddresses": ["address3","city_village"],
+			"visitAttributes": ["Visit Status"],    
+			"showVisitInfo": true,
+			"showProvider": true,
+			"formNamesToFilter": ["Delivery Form"],
+			"conceptNameDisplayFormat": "shortNamePreferred",
+			"locationTagsToFilter": [],
+			"programsToFilter": [],
+			"applyDateRangeFor": "obsDate",
+			"visitTypesToFilter": []
+		}
+    },
+	
+	"visitReport":{
+		"name": "Visit Details",
+		"diy":"true",
+		"type": "visits",
+		"config": {
+			"forDataAnalysis": false,
+			"patientAttributes": ["caste"],
+			"visitAttributes": [],
+			"patientAddresses": ["address3", "city_village"],
+			"applyDateRangeFor": "visitStartDate",
+			"visitTypesToFilter": [],
+			"excludeColumns": ["Patient Name","Birthdate","Patient Created Date","Date Started","Date Stopped", "Date Of Admission","Date Of Discharge"],
+			"additionalPatientIdentifiers": [],
+			"ageGroupName":"All Ages"
+		}
+	},
+	"deliveryObservations":{
+		"name": "Delivery Obs Report",
+		"diy":"true",
+		"type": "observations",
+		"config": {
+			"patientAttributes": ["education"],
+			"patientAddresses": ["address3", "city_village"],
+			"visitAttributes": ["Visit Status", "Admission Status"],
+			"showVisitInfo": true,
+			"showProvider": true,
+			"programsToFilter": [],
+			"conceptNamesToFilter": ["Situation of Child","Type of Delivery","Newborn Gender","Delivery Note, Liveborn weight","Condition of New Born","Delivery Note, Stillbirth type"],
+			"conceptValuesToFilter":[],
+			"conceptClassesToFilter": [],
+			"locationTagsToFilter": [],
+			"applyDateRangeFor": "obsDate",
+			"encounterPerRow": false,
+			"forDataAnalysis": false,
+			"visitTypesToFilter": [],
+			"excludeColumns": ["Patient Name","Birthdate","Program Name","Program Enrollment Date","Program End Date","Program Created Date","Patient Created Date","Observation Datetime","Observation Date","Parent Concept","Observation Created Date","Visit Stop Date","Visit Start Date"],
+			"additionalPatientIdentifiers": [],
+			"ignoreEmptyValues": false,
+			"conceptNameDisplayFormat": "shortNamePreferred",
+			"ageGroupName":"Clients Served"
+		}
+	},
+	"InfantFormFormReport":{
+		"name": "Infant Form FormReport",
+		"diy":"true",
+		"type": "forms",
+		"config": {
+			"patientAttributes": ["caste", "primaryContact"],
+			"patientAddresses": ["address3","city_village"],
+			"visitAttributes": ["Visit Status"],    
+			"showVisitInfo": true,
+			"showProvider": true,
+			"formNamesToFilter": ["Newborn Details"],
+			"conceptNameDisplayFormat": "shortNamePreferred",
+			"locationTagsToFilter": [],
+			"programsToFilter": [],
+			"applyDateRangeFor": "obsDate",
+			"visitTypesToFilter": []
+		}
+    }
+}
